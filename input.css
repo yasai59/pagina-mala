@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.epillepsy {
+  animation: epillepsy 0.004s infinite;
+}
+
+.gallery-img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes epillepsy {
+  0% {
+    background-color: #000;
+    color: white;
+  }
+  50% {
+    background-color: #fff;
+    color: black;
+  }
+  100% {
+    background-color: #000;
+    color: white;
+  }
+  
+}
